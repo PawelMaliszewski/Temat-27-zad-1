@@ -21,4 +21,6 @@ public class User {
     private String lastName;
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate birthDate;
+    private String email;
+    private Boolean newsletter;
 }

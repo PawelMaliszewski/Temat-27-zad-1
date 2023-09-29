@@ -29,6 +29,21 @@
                        class="form-control" id="transaction_date" required>
             </div>
         </div>
+        <div class="row">
+            <div class="col w-25">
+                <label for="email" class="form-label">Wpisz email</label>
+                <input th:field="*{email}" type="email" class="form-control"
+                       id="email" required>
+            </div>
+            <div class="col w-25">
+                <label for="newsletter">Zapisany do biuletynu?</label>
+                <select th:field="*{newsletter}" id="newsletter" class="form-select mt-2"
+                        aria-label="Default select example" required>
+                    <option th:value="false" th:text="Nie"></option>
+                    <option th:value="true" th:text="Tak"></option>
+                </select>
+            </div>
+        </div>
         <button type="submit" class="btn btn-primary mt-2">Dodaj użytkownika</button>
     </form>
 </div>

@@ -4,8 +4,10 @@
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
                    https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
 
-    <include file="0001_create_users_table.xml" relativeToChangelogFile="true"/>
-    <include file="/datatest/0001_users_test_data.xml" relativeToChangelogFile="true"/>
-    <include file="0002_add_columns_to_user_data_base.xml" relativeToChangelogFile="true"/>
-
+    <changeSet id="0" author="admin">
+        <addColumn tableName="users">
+            <column name="email" type="VARCHAR(100)"/>
+            <column name="newsletter" type="BOOLEAN"/>
+        </addColumn>
+    </changeSet>
 </databaseChangeLog>
