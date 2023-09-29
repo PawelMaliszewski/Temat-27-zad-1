@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="00001" author="admin" context="dev">
+        <insert tableName="users">
+            <column name="first_name" value="Jaś"/>
+            <column name="last_name" value="Fasola"/>
+            <column name="birth_date" value="1911-11-11"/>
+        </insert>
+        <insert tableName="users">
+            <column name="first_name" value="Zosia"/>
+            <column name="last_name" value="Kopczyńska"/>
+            <column name="birth_date" value="1990-1-21"/>
+        </insert>
+        <insert tableName="users">
+            <column name="first_name" value="Lord"/>
+            <column name="last_name" value="Vader"/>
+            <column name="birth_date" value="1974-05-01"/>
+        </insert>
+        <insert tableName="users">
+            <column name="first_name" value="Jak"/>
+            <column name="last_name" value="Kaczmarek"/>
+            <column name="birth_date" value="1980-09-13"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<div th:fragment="header">
+    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+        <a th:href="@{/}" class="link-offset-3 link-underline-opacity-35 link-underline-opacity-100-hover ">Strona główna</a>
+        <a th:href="@{/add_user}" class="link-offset-3 link-underline-opacity-35 link-underline-opacity-100-hover ">Dodaj użytkownika</a>
+        <a th:href="@{/user_list}" class="link-offset-3 link-underline-opacity-35 link-underline-opacity-100-hover ">Lista Użytkowników</a>
+    </div>
+</div>
+</html>
