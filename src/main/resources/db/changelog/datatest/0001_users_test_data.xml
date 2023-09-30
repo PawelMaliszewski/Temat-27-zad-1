@@ -9,21 +9,29 @@
             <column name="first_name" value="Jaś"/>
             <column name="last_name" value="Fasola"/>
             <column name="birth_date" value="1911-11-11"/>
+            <column name="email" value="jas@fasola.com"/>
+            <column name="newsletter" value="false"/>
         </insert>
         <insert tableName="users">
             <column name="first_name" value="Zosia"/>
             <column name="last_name" value="Kopczyńska"/>
             <column name="birth_date" value="1990-1-21"/>
+            <column name="email" value="zosia@kopczynska.com"/>
+            <column name="newsletter" value="true"/>
         </insert>
         <insert tableName="users">
             <column name="first_name" value="Lord"/>
             <column name="last_name" value="Vader"/>
             <column name="birth_date" value="1974-05-01"/>
+            <column name="email" value="lord@vader.com"/>
+            <column name="newsletter" value="true"/>
         </insert>
         <insert tableName="users">
             <column name="first_name" value="Jak"/>
             <column name="last_name" value="Kaczmarek"/>
             <column name="birth_date" value="1980-09-13"/>
+            <column name="email" value="jak@kaczmarek.com"/>
+            <column name="newsletter" value="false"/>
         </insert>
     </changeSet>
 </databaseChangeLog>
